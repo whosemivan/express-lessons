@@ -13,9 +13,6 @@ body>h1 {
   color: #00f;
   text-align: center;
 }
-body:hover {
-  background-color: #eee;
-}
 body .products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

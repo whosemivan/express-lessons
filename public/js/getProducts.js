@@ -15,6 +15,6 @@ async function deleteProduct(el) {
     const res = await fetch("/api/vegetables");
     const data = await res.json();
     data.data.forEach((obj) => {
-        container.innerHTML += `<div onclick="deleteProduct(this)" class="products__item" data-key="${obj.name}">${obj.name}</div>`
+        container.innerHTML += `<div onclick="deleteProduct(this)" class="products__item" data-key="${obj._id}">${obj.name}</div>`
     })
 })();
